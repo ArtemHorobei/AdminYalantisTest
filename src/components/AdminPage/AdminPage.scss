@@ -1,0 +1,51 @@
+.it-admin-page-wrap {
+  .it-admin-page-content {
+  }
+  .it-admin-page-add-image-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .it-admin-page-button-add-image {
+      height: 40px;
+      width: 150px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      text-transform: uppercase;
+      &.create {
+        background-color: #1ebea5;
+        border-color: #1ebea5;
+        &:hover {
+          cursor: pointer;
+          background-color: #108562;
+          border-color: #108562;
+        }
+      }
+      &.cancel {
+        background-color: #ee5451;
+        border-color: #ee5451;
+        &:hover {
+          cursor: pointer;
+          background-color: #BA4340;
+          border-color: #BA4340;
+        }
+      }
+    }
+    .it-admin-page-new-image {
+      max-width: 25%;
+      margin-bottom: 15px;
+    }
+    .it-admin-page-textarea {
+      width: 25%;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.invisible {
+  visibility: hidden !important;
+}

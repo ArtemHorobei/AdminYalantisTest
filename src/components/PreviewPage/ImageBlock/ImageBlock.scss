@@ -1,0 +1,22 @@
+.it-image-block-wrap {
+  .it-image-block-content {
+    max-width: 550px;
+    margin: auto;
+    position: relative;
+    .it-image-block-info-icon {
+      position: absolute;
+      left: 5px;
+      top: 5px;
+      &:hover {
+        fill: gray;
+        cursor: pointer;
+      }
+    }
+    .it-image-block-item {
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      width: 100%;
+      margin: auto auto 10px auto;
+      height: 70%;
+    }
+  }
+}

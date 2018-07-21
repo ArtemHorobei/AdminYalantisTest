@@ -1,0 +1,50 @@
+.it-image-block-admin-wrap {
+  .it-image-block-content {
+    max-width: 550px;
+    margin: auto;
+    position: relative;
+    margin-bottom: 15px;
+    .it-image-block-item {
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      width: 100%;
+      margin: auto auto 10px auto;
+      height: 70%;
+    }
+    .it-image-block-buttons-wrap {
+      display: flex;
+      justify-content: space-around;
+      .it-image-block-button {
+        height: 40px;
+        width: 150px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+        &.edit {
+          background-color: #1ebea5;
+          border-color: #1ebea5;
+          &:hover {
+            cursor: pointer;
+            background-color: #108562;
+            border-color: #108562;
+          }
+        }
+        &.delete {
+          background-color: #ee5451;
+          border-color: #ee5451;
+          &:hover {
+            cursor: pointer;
+            background-color: #BA4340;
+            border-color: #BA4340;
+          }
+        }
+      }
+    }
+    .it-image-block-admin-textarea {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+}
