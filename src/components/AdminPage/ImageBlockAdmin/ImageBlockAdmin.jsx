@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 
 const propTypes = {
     image: PropTypes.object.isRequired,
-    requestDeleteImages: PropTypes.func.isRequired,
-    requestEditImages: PropTypes.func.isRequired,
+    requestDeleteImage: PropTypes.func.isRequired,
+    requestEditImage: PropTypes.func.isRequired,
 };
 
 class ImageBlockAdmin extends Component {
@@ -20,7 +20,7 @@ class ImageBlockAdmin extends Component {
         this.setState({tooltipText: e.target.value});
     };
     handleClickDelete = () => {
-        this.props.requestDeleteImages(this.props.image.id);
+        this.props.requestDeleteImage(this.props.image.id);
     };
     toggleEditState = () => {
         this.setState({ isEdit: !this.state.isEdit })
@@ -30,7 +30,7 @@ class ImageBlockAdmin extends Component {
             id: this.props.image.id,
             tooltip: this.state.tooltipText,
         };
-        this.props.requestEditImages(editData);
+        this.props.requestEditImage(editData);
         this.setState({ isEdit: !this.state.isEdit })
     };
     render () {

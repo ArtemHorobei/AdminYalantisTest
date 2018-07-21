@@ -1,0 +1,19 @@
+{
+  "production": {
+    "apiPrefix": "localhost:3001/"
+  },
+
+  "development": {
+    "apiPrefix": "localhost:3001/"
+  },
+
+  "versionApi": "api/v1/",
+
+  "images": {
+    "getImages": "images",
+    "addImage": "images",
+    "updateImage": "images",
+    "deleteImage": "images"
+  }
+}
+

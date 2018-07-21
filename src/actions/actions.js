@@ -1,20 +1,20 @@
 export const REQUEST_GET_IMAGES = 'REQUEST_GET_IMAGES';
 export const RECEIVE_GET_IMAGES = 'RECEIVE_GET_IMAGES';
-export const REQUEST_ADD_IMAGES = 'REQUEST_ADD_IMAGES';
-export const RECEIVE_ADD_IMAGES = 'RECEIVE_ADD_IMAGES';
-export const REQUEST_DELETE_IMAGES = 'REQUEST_DELETE_IMAGES';
-export const RECEIVE_DELETE_IMAGES = 'RECEIVE_DELETE_IMAGES';
-export const REQUEST_EDIT_IMAGES = 'REQUEST_EDIT_IMAGES';
-export const RECEIVE_EDIT_IMAGES = 'RECEIVE_EDIT_IMAGES';
+export const REQUEST_ADD_IMAGE = 'REQUEST_ADD_IMAGE';
+export const RECEIVE_ADD_IMAGE = 'RECEIVE_ADD_IMAGE';
+export const REQUEST_DELETE_IMAGE = 'REQUEST_DELETE_IMAGE';
+export const RECEIVE_DELETE_IMAGE = 'RECEIVE_DELETE_IMAGE';
+export const REQUEST_EDIT_IMAGE = 'REQUEST_EDIT_IMAGE';
+export const RECEIVE_EDIT_IMAGE = 'RECEIVE_EDIT_IMAGE';
 
 export const requestGetImages = () => ({ type: REQUEST_GET_IMAGES });
 export const receiveGetImages = data => ({ type: RECEIVE_GET_IMAGES, data });
 
-export const requestAddImages = (file, tooltipText) => ({ type: REQUEST_ADD_IMAGES, payload: {file, tooltipText} });
-export const receiveAddImages = data => ({ type: RECEIVE_ADD_IMAGES, data });
+export const requestAddImage = (file, tooltipText) => ({ type: REQUEST_ADD_IMAGE, payload: {file, tooltipText} });
+export const receiveAddImage = data => ({ type: RECEIVE_ADD_IMAGE, data });
 
-export const requestDeleteImages = id => ({ type: REQUEST_DELETE_IMAGES, id });
-export const receiveDeleteImages = data => ({ type: RECEIVE_DELETE_IMAGES, data });
+export const requestDeleteImage = id => ({ type: REQUEST_DELETE_IMAGE, id });
+export const receiveDeleteImage = data => ({ type: RECEIVE_DELETE_IMAGE, data });
 
-export const requestEditImages = data => ({ type: REQUEST_EDIT_IMAGES, data });
-export const receiveEditImages = data => ({ type: RECEIVE_EDIT_IMAGES, data });
+export const requestEditImage = data => ({ type: REQUEST_EDIT_IMAGE, data });
+export const receiveEditImage = data => ({ type: RECEIVE_EDIT_IMAGE, data });

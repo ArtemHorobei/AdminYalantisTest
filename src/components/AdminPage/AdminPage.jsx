@@ -5,9 +5,9 @@ import PropTypes from 'prop-types';
 
 const propTypes = {
     images: PropTypes.array.isRequired,
-    requestAddImages: PropTypes.func.isRequired,
-    requestDeleteImages: PropTypes.func.isRequired,
-    requestEditImages: PropTypes.func.isRequired,
+    requestAddImage: PropTypes.func.isRequired,
+    requestDeleteImage: PropTypes.func.isRequired,
+    requestEditImage: PropTypes.func.isRequired,
 };
 
 class AdminPage extends Component {
@@ -38,7 +38,7 @@ class AdminPage extends Component {
     };
     handleClickSendFile = () => {
         const { file, tooltipText } = this.state;
-        this.props.requestAddImages(file, tooltipText);
+        this.props.requestAddImage(file, tooltipText);
         this.handleClickDeleteFile();
     };
     render() {
@@ -46,8 +46,8 @@ class AdminPage extends Component {
             this.props.images.map(item => {
                 return (
                     <ImageBlockAdmin
-                        requestEditImages={this.props.requestEditImages}
-                        requestDeleteImages={this.props.requestDeleteImages}
+                        requestEditImage={this.props.requestEditImage}
+                        requestDeleteImage={this.props.requestDeleteImage}
                         key={item.id}
                         image={item}
                     />

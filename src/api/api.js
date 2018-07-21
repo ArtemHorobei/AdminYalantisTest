@@ -1,16 +1,28 @@
+import config from './config.json';
 import axios from 'axios';
-import Cookies from 'js-cookie';
+
+const apiPrefix = config[process.env.NODE_ENV].apiPrefix + config.versionApi;
 
 export const requestGetImages = () => {
-    const cookieHeaders = Cookies.get('session');
-    return axios.get('http://localhost:3002/api/v1/posts', { headers: JSON.parse(cookieHeaders) }).then((res) => {
+    return axios.get(`${apiPrefix}${config.images.getImages}`).then((res) => {
         return res;
     });
 };
 
-export const requestAddImages = () => {
-    const cookieHeaders = Cookies.get('session');
-    return axios.post('http://localhost:3002/api/v1/posts', { title: 'Title', content: 'Content' }, { headers: JSON.parse(cookieHeaders) }).then((res) => {
+export const requestAddImage = () => {
+    return axios.post(`${apiPrefix}${config.images.getImages}`).then((res) => {
+        return res;
+    });
+};
+
+export const requestEditImage = () => {
+    return axios.put(`${apiPrefix}${config.images.getImages}`).then((res) => {
+        return res;
+    });
+};
+
+export const requestDeleteImage = () => {
+    return axios.delete(`${apiPrefix}${config.images.getImages}`).then((res) => {
         return res;
     });
 };

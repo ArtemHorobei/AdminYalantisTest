@@ -1,17 +1,23 @@
 import { call, put, takeLatest } from 'redux-saga/effects';
 import {
     REQUEST_GET_IMAGES,
-    REQUEST_ADD_IMAGES,
-    REQUEST_DELETE_IMAGES,
-    REQUEST_EDIT_IMAGES,
+    REQUEST_ADD_IMAGE,
+    REQUEST_DELETE_IMAGE,
+    REQUEST_EDIT_IMAGE,
     receiveGetImages,
-    receiveAddImages,
-    receiveEditImages,
-    receiveDeleteImages,
+    receiveAddImage,
+    receiveEditImage,
+    receiveDeleteImage,
 } from '../actions/actions';
-import { requestGetImages, requestAddImages } from '../api/api';
+import {
+    requestGetImages,
+    requestAddImage,
+    requestEditImage,
+    requestDeleteImage
+} from '../api/api';
 
 function* getImagesSaga() {
+    yield put(receiveGetImages());
     // try {
     //     const data = yield call(requestGetImages);
     //     if (data && data.headers) {
@@ -22,13 +28,13 @@ function* getImagesSaga() {
     // }
 }
 
-function* addImagesSaga(data) {
+function* addImageSaga(data) {
     const newDataImage = {
         id: Math.random().toString().split('.')[1],
         link: data.payload.file,
         tooltip: data.payload.tooltipText
     };
-    yield put(receiveAddImages(newDataImage));
+    yield put(receiveAddImage(newDataImage));
 //     try {
 //         const data = yield call(requestAddImages);
 //         if (data && data.headers) {
@@ -39,12 +45,12 @@ function* addImagesSaga(data) {
 //     }
 }
 
-function* editImagesSaga(data) {
+function* editImageSaga(data) {
     const editDataImage = {
         id: data.data.id,
         tooltip: data.data.tooltip
     };
-    yield put(receiveEditImages(editDataImage));
+    yield put(receiveEditImage(editDataImage));
 //     try {
 //         const data = yield call(requestAddImages);
 //         if (data && data.headers) {
@@ -55,8 +61,8 @@ function* editImagesSaga(data) {
 //     }
 }
 
-function* deleteImagesSaga(data) {
-    yield put(receiveDeleteImages(data.id));
+function* deleteImageSaga(data) {
+    yield put(receiveDeleteImage(data.id));
 //     try {
 //         const data = yield call(requestAddImages);
 //         if (data && data.headers) {
@@ -69,7 +75,7 @@ function* deleteImagesSaga(data) {
 
 export default function* postsSaga() {
     yield takeLatest(REQUEST_GET_IMAGES, getImagesSaga);
-    yield takeLatest(REQUEST_ADD_IMAGES, addImagesSaga);
-    yield takeLatest(REQUEST_EDIT_IMAGES, editImagesSaga);
-    yield takeLatest(REQUEST_DELETE_IMAGES, deleteImagesSaga);
+    yield takeLatest(REQUEST_ADD_IMAGE, addImageSaga);
+    yield takeLatest(REQUEST_EDIT_IMAGE, editImageSaga);
+    yield takeLatest(REQUEST_DELETE_IMAGE, deleteImageSaga);
 }
