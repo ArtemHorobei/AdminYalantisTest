@@ -69,7 +69,7 @@ class AdminPage extends Component {
                                 value={this.state.tooltipText}
                                 onChange={this.handleInputTextarea}
                                 className="it-admin-page-textarea"/>
-                            <div style={{ display: 'flex', justifyContent: 'space-between', width: '25%' }}>
+                            <div className="it-admin-page-buttons-wrap">
                                 <button
                                     className="it-admin-page-button-add-image cancel"
                                     onClick={this.handleClickDeleteFile}
@@ -84,7 +84,12 @@ class AdminPage extends Component {
                                 </button>
                             </div>
                         </React.Fragment> :
-                        <button className="it-admin-page-button-add-image create" onClick={this.handleClickLoadFile}>Upload new image</button>
+                        <button
+                            className="it-admin-page-button-add-image create"
+                            onClick={this.handleClickLoadFile}
+                        >
+                            Upload new image
+                        </button>
                     }
                 </div>
                 <div className="it-admin-page-content">

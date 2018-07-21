@@ -6,6 +6,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 550px;
+    margin: auto;
+    .it-admin-page-buttons-wrap {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
     .it-admin-page-button-add-image {
       height: 40px;
       width: 150px;
@@ -36,11 +43,11 @@
       }
     }
     .it-admin-page-new-image {
-      max-width: 25%;
+      width: 100%;
       margin-bottom: 15px;
     }
     .it-admin-page-textarea {
-      width: 25%;
+      width: 99%;
       margin-bottom: 15px;
     }
   }
