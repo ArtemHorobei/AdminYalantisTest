@@ -1,4 +1,8 @@
-import { call, put, takeLatest } from 'redux-saga/effects';
+import {
+    call,
+    put,
+    takeLatest
+} from 'redux-saga/effects';
 import {
     REQUEST_GET_IMAGES,
     REQUEST_ADD_IMAGE,
