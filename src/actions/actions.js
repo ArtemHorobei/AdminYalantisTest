@@ -10,11 +10,11 @@ export const RECEIVE_EDIT_IMAGE = 'RECEIVE_EDIT_IMAGE';
 export const requestGetImages = () => ({ type: REQUEST_GET_IMAGES });
 export const receiveGetImages = data => ({ type: RECEIVE_GET_IMAGES, data });
 
-export const requestAddImage = (file, tooltipText) => ({ type: REQUEST_ADD_IMAGE, payload: {file, tooltipText} });
+export const requestAddImage = data => ({ type: REQUEST_ADD_IMAGE, data });
 export const receiveAddImage = data => ({ type: RECEIVE_ADD_IMAGE, data });
-
-export const requestDeleteImage = id => ({ type: REQUEST_DELETE_IMAGE, id });
-export const receiveDeleteImage = data => ({ type: RECEIVE_DELETE_IMAGE, data });
 
 export const requestEditImage = data => ({ type: REQUEST_EDIT_IMAGE, data });
 export const receiveEditImage = data => ({ type: RECEIVE_EDIT_IMAGE, data });
+
+export const requestDeleteImage = data => ({ type: REQUEST_DELETE_IMAGE, data });
+export const receiveDeleteImage = data => ({ type: RECEIVE_DELETE_IMAGE, data });

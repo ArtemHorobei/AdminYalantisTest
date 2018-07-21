@@ -1,11 +1,12 @@
 import { connect } from 'react-redux';
 import AdminPage from './AdminPage.jsx';
-import { requestAddImage, requestEditImage, requestDeleteImage } from '../../actions/actions';
+import { requestGetImages, requestAddImage, requestEditImage, requestDeleteImage } from '../../actions/actions';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 const propTypes = {
     images: PropTypes.array.isRequired,
+    requestGetImages: PropTypes.func.isRequired,
     requestAddImage: PropTypes.func.isRequired,
     requestDeleteImage: PropTypes.func.isRequired,
     requestEditImage: PropTypes.func.isRequired,
@@ -23,9 +24,10 @@ const mapStateToProps = () => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        requestAddImage: (file, tooltipText) => dispatch(requestAddImage(file, tooltipText)),
+        requestGetImages: () => dispatch(requestGetImages()),
+        requestAddImage: data => dispatch(requestAddImage(data)),
         requestEditImage: data => dispatch(requestEditImage(data)),
-        requestDeleteImage: id => dispatch(requestDeleteImage(id)),
+        requestDeleteImage: data => dispatch(requestDeleteImage(data)),
     };
 };
 

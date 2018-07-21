@@ -15,34 +15,36 @@ import {
     requestEditImage,
     requestDeleteImage
 } from '../api/api';
+import mockData from './mockData';
 
 function* getImagesSaga() {
-    yield put(receiveGetImages());
-    // try {
-    //     const data = yield call(requestGetImages);
-    //     if (data && data.headers) {
-    //         yield put(receiveGetImages(data.data.data.posts));
-    //     }
-    // } catch (e) {
-    //     console.log(e);
-    // }
+    yield put(receiveGetImages(mockData));
+    try {
+        const data = yield call(requestGetImages);
+        if (data && data.headers) {
+            // yield put(receiveGetImages(data.data.data.posts));
+        }
+    } catch (e) {
+        console.log(e);
+    }
 }
 
 function* addImageSaga(data) {
+    const { data: { file, tooltipText } } = data;
     const newDataImage = {
         id: Math.random().toString().split('.')[1],
-        link: data.payload.file,
-        tooltip: data.payload.tooltipText
+        link: file,
+        tooltip: tooltipText
     };
     yield put(receiveAddImage(newDataImage));
-//     try {
-//         const data = yield call(requestAddImages);
-//         if (data && data.headers) {
-//             yield put(receiveAddImages(data.data.post));
-//         }
-//     } catch (e) {
-//         console.log(e);
-//     }
+    try {
+        const data = yield call(requestAddImage);
+        if (data && data.headers) {
+            // yield put(receiveAddImages(data.data.post));
+        }
+    } catch (e) {
+        console.log(e);
+    }
 }
 
 function* editImageSaga(data) {
@@ -51,26 +53,26 @@ function* editImageSaga(data) {
         tooltip: data.data.tooltip
     };
     yield put(receiveEditImage(editDataImage));
-//     try {
-//         const data = yield call(requestAddImages);
-//         if (data && data.headers) {
-//             yield put(receiveAddImages(data.data.post));
-//         }
-//     } catch (e) {
-//         console.log(e);
-//     }
+    try {
+        const data = yield call(requestEditImage);
+        if (data && data.headers) {
+            // yield put(receiveAddImages(data.data.post));
+        }
+    } catch (e) {
+        console.log(e);
+    }
 }
 
 function* deleteImageSaga(data) {
-    yield put(receiveDeleteImage(data.id));
-//     try {
-//         const data = yield call(requestAddImages);
-//         if (data && data.headers) {
-//             yield put(receiveAddImages(data.data.post));
-//         }
-//     } catch (e) {
-//         console.log(e);
-//     }
+    yield put(receiveDeleteImage(data.data));
+    try {
+        const data = yield call(requestDeleteImage);
+        if (data && data.headers) {
+            // yield put(receiveAddImages(data.data.post));
+        }
+    } catch (e) {
+        console.log(e);
+    }
 }
 
 export default function* postsSaga() {

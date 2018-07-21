@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 
 const propTypes = {
     images: PropTypes.array.isRequired,
+    requestGetImages: PropTypes.func.isRequired,
     requestAddImage: PropTypes.func.isRequired,
     requestDeleteImage: PropTypes.func.isRequired,
     requestEditImage: PropTypes.func.isRequired,
@@ -38,7 +39,7 @@ class AdminPage extends Component {
     };
     handleClickSendFile = () => {
         const { file, tooltipText } = this.state;
-        this.props.requestAddImage(file, tooltipText);
+        this.props.requestAddImage({file, tooltipText});
         this.handleClickDeleteFile();
     };
     render() {
