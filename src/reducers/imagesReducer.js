@@ -1,4 +1,9 @@
-import { RECEIVE_ADD_IMAGES, RECEIVE_GET_IMAGES, RECEIVE_EDIT_IMAGES, RECEIVE_DELETE_IMAGES } from '../actions/actions';
+import {
+    RECEIVE_ADD_IMAGES,
+    RECEIVE_GET_IMAGES,
+    RECEIVE_EDIT_IMAGES,
+    RECEIVE_DELETE_IMAGES,
+} from '../actions/actions';
 import _ from 'lodash';
 
 const initialState = [

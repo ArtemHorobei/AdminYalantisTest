@@ -1,8 +1,8 @@
 import './App.scss';
 import { Switch, Route } from 'react-router';
+import AdminPage from '../AdminPage';
 import Header from '../Header';
 import PreviewPage from '../PreviewPage';
-import AdminPage from '../AdminPage';
 import React from 'react';
 
 const App = () => {

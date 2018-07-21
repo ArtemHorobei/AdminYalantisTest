@@ -58,8 +58,7 @@ class AdminPage extends Component {
             <div className="it-admin-page-wrap">
                 <h1>Admin page</h1>
                 <div className="it-admin-page-add-image-wrap">
-                    {!this.state.file && <button className="it-admin-page-button-add-image create" onClick={this.handleClickLoadFile}>Upload new image</button>}
-                    {this.state.file &&
+                    {this.state.file ?
                         <React.Fragment>
                             <img className="it-admin-page-new-image" src={this.state.file} alt="newImage"/>
                             <textarea
@@ -83,7 +82,8 @@ class AdminPage extends Component {
                                     Create
                                 </button>
                             </div>
-                        </React.Fragment>
+                        </React.Fragment> :
+                        <button className="it-admin-page-button-add-image create" onClick={this.handleClickLoadFile}>Upload new image</button>
                     }
                 </div>
                 <div className="it-admin-page-content">
