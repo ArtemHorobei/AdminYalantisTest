@@ -1,13 +1,24 @@
 import App from 'components/App';
-import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
+import store from '../../../src/store';
+import { Provider } from 'react-redux';
 
 describe('App', () => {
-    it('renders without crashing', () => {
+    it('renders shallow without crashing', () => {
         const component = shallow(
-            <Provider store={{}}>
+            <Provider store={store}>
                 <App />
+            </Provider>);
+        expect(component).toMatchSnapshot();
+    });
+    it('renders mount without crashing', () => {
+        const component = mount(
+            <Provider store={store}>
+                <BrowserRouter>
+                    <App />
+                </BrowserRouter>
             </Provider>);
         expect(component).toMatchSnapshot();
     });

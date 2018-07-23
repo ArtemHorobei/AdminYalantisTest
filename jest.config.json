@@ -3,7 +3,7 @@
   "globals": {
     "window": true
   },
-  "moduleDirectories": ["node_modules", "src", "src/locales", "__mocks__"],
+  "moduleDirectories": ["node_modules", "src"],
   "moduleNameMapper": {
     "^.+\\.(css|scss)$": "identity-obj-proxy"
   },
@@ -13,5 +13,5 @@
   "setupTestFrameworkScriptFile": "<rootDir>/__tests__/setup.js",
   "testRegex": "/__tests__/.*.test.js$",
   "testPathIgnorePatterns": ["<rootDir>/__tests__/coverage"],
-  "coveragePathIgnorePatterns": ["<rootDir>/__tests__", "<rootDir>/__mocks__", "<rootDir>/src"]
+  "coveragePathIgnorePatterns": ["<rootDir>/__tests__"]
 }
