@@ -1,0 +1,30 @@
+//@include buttonStyle ()
+
+@mixin buttonStyle ($height, $width){
+  height: $height;
+  width: $width;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  &.positive {
+    background-color: #1ebea5;
+    border-color: #1ebea5;
+    &:hover {
+      cursor: pointer;
+      background-color: #108562;
+      border-color: #108562;
+    }
+  }
+  &.negative {
+    background-color: #ee5451;
+    border-color: #ee5451;
+    &:hover {
+      cursor: pointer;
+      background-color: #BA4340;
+      border-color: #BA4340;
+    }
+  }
+}

@@ -71,13 +71,13 @@ class AdminPage extends Component {
                                 className="it-admin-page-textarea"/>
                             <div className="it-admin-page-buttons-wrap">
                                 <button
-                                    className="it-admin-page-button-add-image cancel"
+                                    className="it-admin-page-button-add-image negative"
                                     onClick={this.handleClickDeleteFile}
                                 >
                                     Cancel
                                 </button>
                                 <button
-                                    className="it-admin-page-button-add-image create"
+                                    className="it-admin-page-button-add-image positive"
                                     onClick={this.handleClickSendFile}
                                 >
                                     Create
@@ -85,7 +85,7 @@ class AdminPage extends Component {
                             </div>
                         </React.Fragment> :
                         <button
-                            className="it-admin-page-button-add-image create"
+                            className="it-admin-page-button-add-image positive"
                             onClick={this.handleClickLoadFile}
                         >
                             Upload new image

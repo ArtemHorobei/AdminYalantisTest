@@ -1,3 +1,5 @@
+@import '../../../utils/Mixins';
+
 .it-image-block-admin-wrap {
   .it-image-block-content {
     max-width: 550px;
@@ -13,33 +15,9 @@
     .it-image-block-buttons-wrap {
       display: flex;
       justify-content: space-around;
+      margin-bottom: 30px;
       .it-image-block-button {
-        height: 40px;
-        width: 150px;
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        border: none;
-        border-radius: 5px;
-        text-transform: uppercase;
-        &.edit {
-          background-color: #1ebea5;
-          border-color: #1ebea5;
-          &:hover {
-            cursor: pointer;
-            background-color: #108562;
-            border-color: #108562;
-          }
-        }
-        &.delete {
-          background-color: #ee5451;
-          border-color: #ee5451;
-          &:hover {
-            cursor: pointer;
-            background-color: #BA4340;
-            border-color: #BA4340;
-          }
-        }
+        @include buttonStyle(40px, 150px);
       }
     }
     .it-image-block-admin-textarea {

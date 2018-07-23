@@ -1,3 +1,5 @@
+@import '../../../utils/Mixins';
+
 .it-tooltip-wrap {
   position: absolute;
   z-index: 1;
@@ -18,32 +20,7 @@
       justify-content: space-around;
       margin-top: 5px;
       .button {
-        width: 48%;
-        height: 30px;
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        border: none;
-        border-radius: 3px;
-        text-transform: uppercase;
-        &.accept {
-          background-color: #1ebea5;
-          border-color: #1ebea5;
-          &:hover {
-            cursor: pointer;
-            background-color: #108562;
-            border-color: #108562;
-          }
-        }
-        &.decline {
-          background-color: #ee5451;
-          border-color: #ee5451;
-          &:hover {
-            cursor: pointer;
-            background-color: #BA4340;
-            border-color: #BA4340;
-          }
-        }
+        @include buttonStyle(30px, 48%);
       }
     }
   }

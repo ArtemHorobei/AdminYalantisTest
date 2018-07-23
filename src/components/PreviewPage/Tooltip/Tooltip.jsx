@@ -33,8 +33,8 @@ class Tooltip extends Component {
                 <div className="it-tooltip-content">
                     <div className="it-tooltip-text">{this.props.text}</div>
                     <div className="it-tooltip-buttons-wrap">
-                        <button className="button accept">accept</button>
-                        <button className="button decline">decline</button>
+                        <button className="button positive">accept</button>
+                        <button className="button negative">decline</button>
                     </div>
                 </div>
             </div>

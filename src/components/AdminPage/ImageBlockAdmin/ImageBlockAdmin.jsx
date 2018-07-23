@@ -55,20 +55,20 @@ class ImageBlockAdmin extends Component {
                     <div className="it-image-block-buttons-wrap">
                         {this.state.isEdit ?
                             <button
-                                className="it-image-block-button edit"
+                                className="it-image-block-button positive"
                                 onClick={this.handleClickSave}
                                 >
                                 save
                                 </button> :
                             <React.Fragment>
                                 <button
-                                    className="it-image-block-button edit"
+                                    className="it-image-block-button positive"
                                     onClick={this.toggleEditState}
                                 >
                                     edit
                                 </button>
                                 <button
-                                    className="it-image-block-button delete"
+                                    className="it-image-block-button negative"
                                     onClick={this.handleClickDelete}
                                 >
                                     delete
