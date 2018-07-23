@@ -26,7 +26,7 @@ function* getImagesSaga() {
     try {
         const data = yield call(requestGetImages);
         if (data && data.headers) {
-            // yield put(receiveGetImages(data.data.data.posts));
+            // yield put(receiveGetImages(data.data));
         }
     } catch (e) {
         console.log(e);
@@ -44,7 +44,7 @@ function* addImageSaga(data) {
     try {
         const data = yield call(requestAddImage);
         if (data && data.headers) {
-            // yield put(receiveAddImages(data.data.post));
+            // yield put(receiveAddImages(data.data.image));
         }
     } catch (e) {
         console.log(e);
@@ -60,7 +60,7 @@ function* editImageSaga(data) {
     try {
         const data = yield call(requestEditImage);
         if (data && data.headers) {
-            // yield put(receiveAddImages(data.data.post));
+            // yield put(receiveEditImage(data.data.image));
         }
     } catch (e) {
         console.log(e);
@@ -72,7 +72,7 @@ function* deleteImageSaga(data) {
     try {
         const data = yield call(requestDeleteImage);
         if (data && data.headers) {
-            // yield put(receiveAddImages(data.data.post));
+            // yield put(receiveDeleteImage(data.data));
         }
     } catch (e) {
         console.log(e);

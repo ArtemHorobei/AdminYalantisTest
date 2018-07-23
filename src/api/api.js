@@ -16,7 +16,7 @@ export const requestAddImage = () => {
 };
 
 export const requestEditImage = () => {
-    return axios.put(`${apiPrefix}${config.images.editImage}`).then((res) => {
+    return axios.put(`${apiPrefix}${config.images.updateImage}`).then((res) => {
         return res;
     });
 };
