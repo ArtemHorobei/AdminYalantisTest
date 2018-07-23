@@ -28,15 +28,6 @@ describe('AdminPage', () => {
         );
         expect(component.find('AdminPage')).toMatchSnapshot();
     });
-    it('renders shallow without crashing', () => {
-        const component = shallow(
-            <Provider store={store}>
-                <BrowserRouter>
-                    <AdminPageContainer {...propsFunc} />
-                </BrowserRouter>
-            </Provider>);
-        expect(component.find('PreviewPage')).toMatchSnapshot();
-    });
     it('renders mount with 5 images', () => {
         const component = mount(
             <Provider store={store}>

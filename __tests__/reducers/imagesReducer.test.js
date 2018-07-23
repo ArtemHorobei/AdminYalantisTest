@@ -16,17 +16,17 @@ describe('images reducer', () => {
     it('should return the initial state', () => {
         expect(imagesReducer(undefined, [])).toEqual(mockData);
     });
-    it('should return the comments if some action', () => {
+    it('should return the images', () => {
         expect(imagesReducer(mockData, { type: RECEIVE_GET_IMAGES, data: mockData })).toEqual(mockData);
     });
-    it('should return the comments if some action', () => {
+    it('should return one new image', () => {
         expect(imagesReducer(mockData, { type: RECEIVE_ADD_IMAGE, data: newImage })).toEqual([ { id: '1', link: 'link', tooltip: 'tooltip' }, ...mockData]);
     });
-    it('should return the comments if some action', () => {
+    it('should return without one image', () => {
         imagesReducer(mockData, { type: 'RECEIVE_ADD_IMAGE', data: newImage });
         expect(imagesReducer(mockData, { type: RECEIVE_DELETE_IMAGE, payload: deleteImageId })).toEqual(mockData);
     });
-    it('should return the comments if some action', () => {
+    it('should return image updating', () => {
         expect(imagesReducer(mockData, { type: RECEIVE_EDIT_IMAGE, data: editImage })).toEqual(editImageEqual);
     });
 });
