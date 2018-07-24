@@ -26,13 +26,13 @@ describe('ImageBlockAdmin', () => {
     });
     it('click delete file', () => {
         const component = mount(<ImageBlockAdmin image={ mockData[0] } {...propsFunc} />);
-        const buttonCancel = component.find('button.it-image-block-button.delete');
+        const buttonCancel = component.find('button.it-image-block-button.negative');
         buttonCancel.simulate('click');
         expect(propsFunc.requestDeleteImage).toHaveBeenCalledTimes(1);
     });
     it('change state of isEdit', () => {
         const component = mount(<ImageBlockAdmin image={ mockData[0] } {...propsFunc} />);
-        const buttonEdit = component.find('button.it-image-block-button.edit');
+        const buttonEdit = component.find('button.it-image-block-button.positive');
         buttonEdit.simulate('click');
         expect(component.state('isEdit')).toEqual(true);
     });
@@ -46,7 +46,7 @@ describe('ImageBlockAdmin', () => {
     it('click send file', () => {
         const component = mount(<ImageBlockAdmin image={ mockData[0] } {...propsFunc} />);
         component.setState({ isEdit: true, tooltipText: 'someTooltip' });
-        const buttonSave = component.find('button.it-image-block-button.edit');
+        const buttonSave = component.find('button.it-image-block-button.positive');
         buttonSave.simulate('click');
         expect(propsFunc.requestEditImage).toHaveBeenCalledTimes(1);
     });

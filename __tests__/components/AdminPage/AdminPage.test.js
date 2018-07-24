@@ -57,7 +57,7 @@ describe('AdminPage', () => {
     it('click delete file', () => {
         const component = mount(<AdminPage images={ mockData } {...propsFunc} />);
         component.setState({ file: 'someFile' });
-        const buttonCancel = component.find('button.it-admin-page-button-add-image.cancel');
+        const buttonCancel = component.find('button.it-admin-page-button-add-image.negative');
         buttonCancel.simulate('click');
         expect(component.state('file')).toEqual(null);
     });
@@ -71,7 +71,7 @@ describe('AdminPage', () => {
     it('click send file', () => {
         const component = mount(<AdminPage images={ mockData } {...propsFunc} />);
         component.setState({ file: 'someFile', tooltip: 'someTooltip' });
-        const buttonCancel = component.find('button.it-admin-page-button-add-image.create');
+        const buttonCancel = component.find('button.it-admin-page-button-add-image.positive');
         buttonCancel.simulate('click');
         expect(component.state('file')).toEqual(null);
     });
