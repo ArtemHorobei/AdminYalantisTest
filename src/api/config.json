@@ -7,6 +7,10 @@
     "apiPrefix": "localhost:3001/"
   },
 
+  "test": {
+    "apiPrefix": "localhost:3001/"
+  },
+
   "versionApi": "api/v1/",
 
   "images": {
@@ -16,4 +20,3 @@
     "deleteImage": "images"
   }
 }
-

@@ -1,3 +1,4 @@
 import Header from './Header.jsx';
+import { withRouter } from 'react-router-dom';
 
-export default Header;
+export default withRouter(Header);

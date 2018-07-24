@@ -1,5 +1,5 @@
 import './Header.scss';
-import { Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import React from 'react';
 
 const Header = (props) => {
@@ -27,4 +27,4 @@ const Header = (props) => {
     );
 };
 
-export default withRouter(Header);
+export default Header;
