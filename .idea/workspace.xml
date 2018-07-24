@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c69f300-6d75-46aa-a71a-ef11b95492b5" name="Default" comment="">
+    <list default="true" id="3c69f300-6d75-46aa-a71a-ef11b95492b5" name="Default" comment="fix tests">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/__tests__/components/AdminPage/AdminPage.test.js" afterPath="$PROJECT_DIR$/__tests__/components/AdminPage/AdminPage.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/__tests__/components/AdminPage/ImageBlockAdmin/ImageBlockAdmin.test.js" afterPath="$PROJECT_DIR$/__tests__/components/AdminPage/ImageBlockAdmin/ImageBlockAdmin.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/AdminPage/ImageBlockAdmin/ImageBlockAdmin.jsx" afterPath="$PROJECT_DIR$/src/components/AdminPage/ImageBlockAdmin/ImageBlockAdmin.jsx" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,21 +15,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AdminPage.test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/__tests__/components/AdminPage/AdminPage.test.js">
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/api/config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="73" column="91" lean-forward="false" selection-start-line="73" selection-start-column="91" selection-end-line="73" selection-end-column="91" />
+            <state relative-caret-position="180">
+              <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageBlockAdmin.test.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/__tests__/components/AdminPage/ImageBlockAdmin/ImageBlockAdmin.test.js">
+      <file leaf-file-name="AdminPage.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/AdminPage/AdminPage.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="40" column="45" lean-forward="true" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+            <state relative-caret-position="571">
+              <caret line="87" column="21" lean-forward="false" selection-start-line="87" selection-start-column="21" selection-end-line="87" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageBlockAdmin.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/AdminPage/ImageBlockAdmin/ImageBlockAdmin.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="57" column="74" lean-forward="true" selection-start-line="57" selection-start-column="74" selection-end-line="57" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -81,7 +90,6 @@
         <option value="$PROJECT_DIR$/src/sagas/imagesSaga.js" />
         <option value="$PROJECT_DIR$/src/components/PreviewPage/PreviewPage.scss" />
         <option value="$PROJECT_DIR$/src/components/AdminPage/AdminPage.jsx" />
-        <option value="$PROJECT_DIR$/src/components/AdminPage/ImageBlockAdmin/ImageBlockAdmin.jsx" />
         <option value="$PROJECT_DIR$/src/components/PreviewPage/Tooltip/Tooltip.scss" />
         <option value="$PROJECT_DIR$/src/utils/Mixins.scss" />
         <option value="$PROJECT_DIR$/src/components/PreviewPage/Tooltip/Tooltip.jsx" />
@@ -105,6 +113,7 @@
         <option value="$PROJECT_DIR$/__tests__/reducers/imagesReducer.test.js" />
         <option value="$PROJECT_DIR$/__tests__/components/AdminPage/AdminPage.test.js" />
         <option value="$PROJECT_DIR$/__tests__/components/AdminPage/ImageBlockAdmin/ImageBlockAdmin.test.js" />
+        <option value="$PROJECT_DIR$/src/components/AdminPage/ImageBlockAdmin/ImageBlockAdmin.jsx" />
       </list>
     </option>
   </component>
@@ -124,10 +133,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1984" />
-    <option name="y" value="-11" />
-    <option name="width" value="1857" />
-    <option name="height" value="1092" />
+    <option name="x" value="1985" />
+    <option name="y" value="-4" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -223,61 +232,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="__tests__" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yalantis-admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yalantis-admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="__tests__" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yalantis-admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yalantis-admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="__tests__" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AdminPage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yalantis-admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yalantis-admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="__tests__" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -290,6 +245,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ImageBlockAdmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yalantis-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yalantis-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -503,7 +476,7 @@
       <workItem from="1532343775663" duration="369000" />
       <workItem from="1532344158637" duration="9465000" />
       <workItem from="1532410382197" duration="226000" />
-      <workItem from="1532410715407" duration="262000" />
+      <workItem from="1532410715407" duration="2468000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1532167990436</created>
@@ -568,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532357173174</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix tests">
+      <created>1532410985284</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1532410985284</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -604,10 +584,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35319000" />
+    <option name="totallyTimeSpent" value="37525000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1984" y="-11" width="1857" height="1092" extended-state="6" />
+    <frame x="1985" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27086788" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -646,7 +626,8 @@
     <MESSAGE value="fix sagas request to API" />
     <MESSAGE value="add mixins style for button" />
     <MESSAGE value="add tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tests" />
+    <MESSAGE value="fix tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -752,13 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AdminPage/ImageBlockAdmin/ImageBlockAdmin.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="57" column="49" lean-forward="false" selection-start-line="57" selection-start-column="49" selection-end-line="57" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/PreviewPage/Tooltip/Tooltip.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -784,13 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -972,10 +939,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AdminPage/AdminPage.jsx">
+    <entry file="file://$PROJECT_DIR$/__tests__/components/AdminPage/ImageBlockAdmin/ImageBlockAdmin.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="87" column="21" lean-forward="false" selection-start-line="87" selection-start-column="21" selection-end-line="87" selection-end-column="21" />
+        <state relative-caret-position="440">
+          <caret line="46" column="86" lean-forward="true" selection-start-line="46" selection-start-column="86" selection-end-line="46" selection-end-column="86" />
           <folding />
         </state>
       </provider>
@@ -988,10 +955,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/__tests__/components/AdminPage/ImageBlockAdmin/ImageBlockAdmin.test.js">
+    <entry file="file://$PROJECT_DIR$/src/api/config.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="40" column="45" lean-forward="true" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+        <state relative-caret-position="180">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AdminPage/AdminPage.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="87" column="21" lean-forward="false" selection-start-line="87" selection-start-column="21" selection-end-line="87" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AdminPage/ImageBlockAdmin/ImageBlockAdmin.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="57" column="74" lean-forward="true" selection-start-line="57" selection-start-column="74" selection-end-line="57" selection-end-column="74" />
           <folding />
         </state>
       </provider>

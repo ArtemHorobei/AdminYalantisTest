@@ -42,7 +42,7 @@ class ImageBlockAdmin extends Component {
                     value={this.state.tooltipText}
                     onChange={this.handleInputTextarea}
                     className="it-image-block-admin-textarea"/> :
-                this.props.image.tooltip && <div style={{ marginBottom: '15px' }}>{this.props.image.tooltip}</div>;
+                this.props.image.tooltip && <div style={{ marginBottom: '15px', wordBreak: 'break-word' }}>{this.props.image.tooltip}</div>;
         return (
             <div className="it-image-block-admin-wrap">
                 <div className="it-image-block-content">
